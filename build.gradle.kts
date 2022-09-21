@@ -50,6 +50,9 @@ dependencies {
 tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions.jvmTarget = "11"
 }
+tasks.create("stage") {
+    dependsOn("installDist")
+}
 
 kotlin {
     jvmToolchain {
