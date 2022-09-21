@@ -13,4 +13,13 @@ fun Application.module() {
     configureSerialization()
     configureRouting()
     configureDefaultHeaders()
+    configureStatusPages()
+}
+
+fun Application.forTestingModule() {
+    configureMonitoring()
+    configureSerialization()
+    configureRouting()
+    configureDefaultHeaders()
+    configureStatusPages()
 }

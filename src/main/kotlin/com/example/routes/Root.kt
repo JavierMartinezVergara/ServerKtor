@@ -9,7 +9,6 @@ fun Route.root(){
     get("/"){
         call.respond(
             status = HttpStatusCode.OK,
-            message = "Welcome"
-        )
+            message = "Welcome",)
     }
 }

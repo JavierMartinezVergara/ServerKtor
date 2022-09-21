@@ -53,7 +53,7 @@ class HeroRepositoryImpl : HeroRepository {
       name = "Naruto",
       image = "/images/naruto.jpg",
       about = "Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure's Uzumaki clan. He became the jinchūriki of the Nine-Tails on the day of his birth — a fate that caused him to be shunned by most of Konoha throughout his childhood. After joining Team Kakashi, Naruto worked hard to gain the village's acknowledgement all the while chasing his dream to become Hokage.",
-      rating = 5.0,
+      rating = 2.0,
       power = 98,
       month = "Oct",
       day = "10th",
@@ -377,7 +377,7 @@ class HeroRepositoryImpl : HeroRepository {
       name = "Koji",
       image = "/images/koji.jpg",
       about = "Koji Kashin (果心居士, Kashin Koji) is a clone of Jiraiya that was created by Amado for the purpose of killing Isshiki Ōtsutsuki. A former Inner of Kara, he was in charge of the sector on the outskirts of the Land of Fire. An enigmatic man, Koji has a very stoic and straightforward nature that follows a no-nonsense view. Arrogant as he may appear, he has consistently shown himself to be a very rational and perceptive man.",
-      rating = 4.5,
+      rating = 1.5,
       power = 90,
       month = "Jan",
       day = "1st",
@@ -403,7 +403,7 @@ class HeroRepositoryImpl : HeroRepository {
       prevPage = calculatePage(page = page)[PREVIOUS_PAGE_KEY],
       nextPage = calculatePage(page = page)[NEXT_PAGE_KEY],
       heroes = heroes[page]!!,
-      //lastUpdated = System.currentTimeMillis()
+      lastUpdated = System.currentTimeMillis()
     )
   }
 
